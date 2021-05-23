@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/image/logo.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/app.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__title">
+                <div class="header__title__main">
+                    <a href="">Best Place</a>
+                </div>
+                <div class="header__title__sub">
+                    Сервис поиска площадок
+                </div>
+            </div>
+            <nav class="header__menu">
+                <ul class="menu">
+                    <li class="menu-link"><a href="homeLogin.html">Площадки</a></li>
+                    <li class="menu-link active"><a href="application.html">Мероприятия</a></li>
+                    <li class="menu-link"><a href="profile.html">Личный кабинет</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <div class="content__menu">
+            <div class="row">
+                <div class="applications">
+                    <span>Заявки</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="pastApplications">
+                    <span>Прошедшие мероприятия</span>
+                </div>
+                <div class="upcomingApplications">
+                    <span>Предстоящие мероприятия</span>
+                </div>
+            </div>
+        </div>
+        <div class="applicationsCard">
+            <div class="application ">
+                <div class="img">
+                    <img src="image/pictures/4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="name">
+                        Фестиваль
+                    </div>
+                    <div class="desc">
+                        Данное мероприятие не подходит для площадки
+                    </div>
+                </div>
+            </div>
+            <div class="application ">
+                <div class="img">
+                    <img src="image/pictures/5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="name">
+                        Площадка
+                    </div>
+                    <div class="desc">
+                        Дата 21.06.2021 </div>
+                    <div class="btns">
+                        <button class="see" id="openModal">Посмотреть</button>
+                        <button class="cancel">Отмена</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <div class="modal__menu">
+                <div class="title">
+                    Название мероприятия
+                </div>
+                <div class="exit" id="exit">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="img">
+                <img src="image/pictures/5.jpg" alt="">
+            </div>
+            <div class="dates">
+                <div class="date">
+                    <div class="title">
+                        Дата начала:
+                    </div>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="date">
+                    <div class="title">
+                        Дата окончания:
+                    </div>
+                    <input type="date" name="" id="">
+                </div>
+            </div>
+            <div class="desc">
+                <div class="title">
+                    Описание
+                </div>
+                <textarea name="" id=""></textarea>
+            </div>
+            <button class="sendForm" id="sendModal">Принять</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="modal.js"></script>
+</body>
+
+</html>

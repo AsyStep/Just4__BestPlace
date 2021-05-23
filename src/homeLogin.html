@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/image/logo.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="css/app.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__title">
+                <div class="header__title__main">
+                    <a href="">Best Place</a>
+                </div>
+                <div class="header__title__sub">
+                    Сервис поиска площадок
+                </div>
+            </div>
+            <nav class="header__menu">
+                <ul class="menu">
+                    <li class="menu-link active"><a href="#">Площадки</a></li>
+                    <li class="menu-link"><a href="application.html">Мероприятия</a></li>
+                    <li class="menu-link"><a href="profile.html">Личный кабинет</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <div class="form__filters">
+            <div class="row">
+                <button>Очистить фильтры</button>
+            </div>
+            <div class="row">
+                <div class="filters-item window">
+                    <div class="name">Формат мероприятия</div>
+                    <div class="filter__window">
+                        <div class="window-filters">
+                            <div>
+                                <input type="checkbox" name="masterClass" id="masterClass">
+                                <label for="masterClass">Мастер-класс</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="koncert" id="koncert">
+                                <label for="koncert">Концерт</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="festival" id="festival">
+                                <label for="festival">Фестиваль</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="vistavka" id="vistavka">
+                                <label for="vistavka">Выстовка</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="drugoe" id="drugoe">
+                                <label for="drugoe">Другое</label>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button>Применить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters-item window">
+                    <div class="name">Рейтинг</div>
+                    <div class="filter__window">
+                        <div class="window-filters">
+                            <div>
+                                <input type="checkbox" name="reiting1" id="reiting1">
+                                <label for="reiting1">1</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="reiting2" id="reiting2">
+                                <label for="reiting2">2</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="reiting3" id="reiting3">
+                                <label for="reiting3">3</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="reiting4" id="reiting4">
+                                <label for="reiting4">4</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="reiting5" id="reiting5">
+                                <label for="reiting5">5</label>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button>Применить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters-item window">
+                    <div class="name">Цена</div>
+                    <div class="filter__window">
+                        <div class="window-filters">
+                            <div>
+                                <label for="priceFrom">От:</label>
+                                <input type="number" name="priceFrom" id="priceFrom">
+                            </div>
+                            <div>
+                                <label for="priceTo">До:</label>
+                                <input type="number" name="priceTo" id="priceTo">
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button>Применить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filters-item window">
+                    <div class="name">Тип территории</div>
+                    <div class="filter__window">
+                        <div class="window-filters">
+                            <div>
+                                <input type="checkbox" name="openLocation" id="openLocation">
+                                <label for="openLocation">Открытая</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="closeLocation" id="closeLocation">
+                                <label for="closeLocation">Закрытая</label>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button>Применить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters-item window">
+                    <div class="name">Парковка</div>
+                    <div class="filter__window">
+                        <div class="window-filters">
+                            <div>
+                                <label for="parkingCount">От:</label>
+                                <input type="number" name="parkingCount" id="parkingCount">
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button>Применить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters-item window">
+                    <div class="name">Вместимость</div>
+                    <div class="filter__window">
+                        <div class="window-filters">
+                            <div>
+                                <label for="peopleCount">От:</label>
+                                <input type="number" name="peopleCount" id="peopleCount">
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button>Применить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters-item window">
+                    <div class="name">Туалет</div>
+                    <div class="filter__window">
+                        <div class="window-filters">
+                            <div>
+                                <input type="checkbox" name="kaifToilet" id="kaifToilet">
+                                <label for="kaifToilet">С удобствами</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="notKaifToilet" id="notKaifToilet">
+                                <label for="notKaifToilet">Без удобств</label>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button>Применить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters-item">Адрес</div>
+                <input type="date" class="filters-item"></input>
+                <button>Искать</button>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="img">
+                    <img src="image/pictures/1.jpg" alt="">
+                    <div class="stars">
+                        <img src="/image/icon/Star 1.png" alt="" srcset="">
+                        <img src="/image/icon/Star 1.png" alt="" srcset="">
+                        <img src="/image/icon/Star 1.png" alt="" srcset="">
+                        <img src="/image/icon/Star 1.png" alt="" srcset="">
+                        <img src="/image/icon/Star 1.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="name">
+                        Ресторан
+                    </div>
+                    <div class="price round">
+                        20000 рублей
+                    </div>
+                    <div class="adress round">
+                        г. Белгород
+                    </div>
+                    <a href="aboutCard.html">Подробнее ↓</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="image/pictures/2.jpg" alt="">
+                    <div class="stars">
+                        <img src="/image/icon/Star 1.png" alt="" srcset="">
+                        <img src="/image/icon/Star 1.png" alt="" srcset="">
+                        <img src="/image/icon/Star 1.png" alt="" srcset="">
+                        <img src="/image/icon/Star 1.png" alt="" srcset="">
+                        <img src="/image/icon/Star 4.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="name">
+                        Ресторан
+                    </div>
+                    <div class="price round">
+                        13000 рублей
+                    </div>
+                    <div class="adress round">
+                        г. Белгород с. Алексеевка
+                    </div>
+                    <a href="aboutCard.html">Подробнее ↓</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="image/pictures/3.jpg" alt="">
+                    <div class="stars">
+                        <img src="/image/icon/Star 1.png" alt="" srcset="">
+                        <img src="/image/icon/Star 1.png" alt="" srcset="">
+                        <img src="/image/icon/Star 1.png" alt="" srcset="">
+                        <img src="/image/icon/Star 4.png" alt="" srcset="">
+                        <img src="/image/icon/Star 4.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="name">
+                        Конференц зал
+                    </div>
+                    <div class="price round">
+                        1200 рублей
+                    </div>
+                    <div class="adress round">
+                        г. Белгород пгт. Прохоровка
+                    </div>
+                    <a href="aboutCard.html">Подробнее ↓</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

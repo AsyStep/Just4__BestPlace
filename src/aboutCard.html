@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/image/logo.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/app.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__title">
+                <div class="header__title__main">
+                    <a href="">Best Place</a>
+                </div>
+                <div class="header__title__sub">
+                    Сервис поиска площадок
+                </div>
+            </div>
+            <nav class="header__menu">
+                <ul class="menu">
+                    <li class="menu-link active"><a href="homeLogin.html">Площадки</a></li>
+                    <li class="menu-link"><a href="application.html">Мероприятия</a></li>
+                    <li class="menu-link"><a href="profile.html">Личный кабинет</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <div class="sub__menu">
+            <div class="returnHome">
+                <img src="/image/icon/Arrow 1.png" alt="">
+                <a href="homeLogin.html">Площадки</a>
+            </div>
+            <div class="title">
+                Название площадки
+            </div>
+            <div class="heart" id="heart">
+
+                &#10084;
+
+            </div>
+        </div>
+        <div class="titleImg">
+            <img src="image/pictures/2.jpg" alt="">
+        </div>
+        <div class="descCard">
+            <div class="rowTitle">
+                <div class="columnTitle">Общее</div>
+                <div class="columnTitle">Удобства</div>
+                <div class="columnTitle">Оборудование</div>
+                <div class="columnTitle">Контакты</div>
+            </div>
+            <div class="rowContent">
+                <div class="columnContent">
+                    <div class="content">
+                        <div class="title">
+                            Вместимость
+                        </div>
+                        <div class="text">
+                            50 человек
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Парковка
+                        </div>
+                        <div class="text">
+                            Своя (40)
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Тип территории
+                        </div>
+                        <div class="text">
+                            крытая
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Мероприятия
+                        </div>
+                        <div class="text">
+                            выставки, мастер-класс, праздники
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Стоимость
+                        </div>
+                        <div class="text">
+                            1500 руб / час
+                        </div>
+                    </div>
+                </div>
+                <div class="columnContent">
+                    <div class="content">
+                        <div class="title">
+                            Туалет
+                        </div>
+                        <div class="text">
+                            С удобствами
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Зона питания
+                        </div>
+                        <div class="text">
+                            есть на площадке
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Персонал
+                        </div>
+                        <div class="text">
+                            предоставляется
+                        </div>
+                    </div>
+                </div>
+                <div class="columnContent">
+                    <div class="content">
+                        <div class="title">
+                            Техническая оснащенность
+                        </div>
+                        <div class="text">
+                            проектор, интернет
+                        </div>
+                    </div>
+                </div>
+                <div class="columnContent">
+                    <div class="content">
+                        <div class="title">
+                            Адрес
+                        </div>
+                        <div class="text">
+                            г. Белгород, ул. Первая 24
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Телефон
+                        </div>
+                        <div class="text">
+                            8-900-908-89-09
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Почта
+                        </div>
+                        <div class="text">
+                            example@yandex.ru
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sendApplication">
+            <button id="openModal">Оставить заявку</button>
+        </div>
+        <div class="recentEvents">
+            <div class="title">
+                Прошедшие мероприятия
+            </div>
+            <div class="events">
+                <div class="event">
+                    <img src="image/pictures/6.png" alt="">
+                    <div class="title">Концерт</div>
+                </div>
+                <div class="event">
+                    <img src="image/pictures/5.jpg" alt="">
+                    <div class="title">Открытие площадки</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <div class="modal__menu">
+                <div class="title">
+                    Название мероприятия
+                </div>
+                <div class="exit" id="exit">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <input type="text" class="nameApplication">
+            <div class="desc">
+                <div class="title">
+                    Описание
+                </div>
+                <textarea name="" id=""></textarea>
+            </div>
+            <div class="dates">
+                <div class="date">
+                    <div class="title">
+                        Дата начала:
+                    </div>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="date">
+                    <div class="title">
+                        Дата окончания:
+                    </div>
+                    <input type="date" name="" id="">
+                </div>
+            </div>
+            <button class="sendForm" id="sendModal">Оставить заявку</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="modal.js"></script>
+    <script src="heart.js"></script>
+</body>
+
+</html>
